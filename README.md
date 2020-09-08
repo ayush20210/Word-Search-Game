@@ -36,27 +36,24 @@ wordsGrid.setTypeface(FontManager.getTypeface(this, FontManager.POYNTER));
 
 // create a 10x10 grid of characters which includes words to be found
 wordsGrid.setLetters(new char[][] {
-        "XJAVADFPNL".toCharArray(),
-        "WSFAKMQZRP".toCharArray(),
-        "QWJRTOLNDY".toCharArray(),
-        "MIRIUBTNVT".toCharArray(),
-        "JFPAWILLGH".toCharArray(),
-        "STBBNLIZIO".toCharArray(),
-        "GCRLJEUQFN".toCharArray(),
-        "JTZEVIYZMW".toCharArray(),
-        "PEWQCHDPJK".toCharArray(),
-        "OBJECTIVEC".toCharArray()
+        "ASCDEFGHIJ".toCharArray(),
+        "AECDEFGHIJ".toCharArray(),
+        "AACDEFGHIJ".toCharArray(),
+        "ARCWEFGHIJ".toCharArray(),
+        "ACCDOFGHIJ".toCharArray(),
+        "AHCGERGHIJ".toCharArray(),
+        "AICDEFDHIJ".toCharArray(),
+        "ANCDEFGHIJ".toCharArray(),
+        "AGCSOMEHIJ".toCharArray(),
+        "ABCDEFGHIJ".toCharArray()
 });
 
 // words with their respective starting and ending X and Y values in the grid
 wordsGrid.setWords(
-        new Word("SWIFT", false, 1, 1, 5, 1),
-        new Word("KOTLIN", false, 1, 4, 6, 9),
-        new Word("OBJECTIVEC", false, 9, 0, 9, 9),
-        new Word("VARIABLE", false, 0, 3, 7, 3),
-        new Word("JAVA", false, 0, 1, 0, 4),
-        new Word("MOBILE", false, 1, 5, 6, 6),
-        new Word("PYTHON", false, 1, 9, 6, 9));
+        new Word("WORD", false, 3, 3, 6, 6),
+        new Word("SOME", false, 8, 3, 8, 6),
+        new Word("SEARCHING", false, 0, 1, 8, 1),
+        new Word("FOG", false, 3, 5, 5, 3));
 
 // callback when a word is found
 wordsGrid.setOnWordSearchedListener(new WordSearchView.OnWordSearchedListener() {
